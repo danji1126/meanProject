@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require('../app');
+var app = require('./app');
 var debug = require('debug')('meanProject:server');
 var http = require('http');
 
@@ -19,9 +19,9 @@ app.set('port', port);
  * Create HTTP server.
  */
 
-var server = http.createServer(app);
+ var server = http.createServer(app);
 
-/**
+ /**
  * Listen on provided port, on all network interfaces.
  */
 
